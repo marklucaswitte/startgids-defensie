@@ -145,6 +145,7 @@ footer{border-top:1px solid var(--line);padding-top:16px;font-size:.8rem;line-he
 
 
 <script id="logic">
+
 var UPDATED='9 oktober 2026';
 var BASE='https://werkenbijdefensie.nl';
 
@@ -345,11 +346,11 @@ if(typeof module!=='undefined')module.exports={buildPlan:buildPlan,CLUSTERS:CLUS
 
 <div class="shell">
   <header class="top">
-    <div class="brand"><span class="eyebrow">Onofficiële voorbereidingsgids</span><b>Startgids Defensie</b></div>
+    <div class="brand"><span class="eyebrow">Onofficiële voorbereidingsgids · Bèta</span><b>Startgids Defensie</b></div>
     <nav id="nav" aria-label="Hoofdmenu"></nav>
   </header>
   <main id="app"></main>
-  <footer>Dit is geen website van Defensie en geen medisch advies. Eisen kunnen veranderen en per vacature verschillen. Controleer altijd de officiële vacaturepagina op werkenbijdefensie.nl. Gegevens samengesteld op <span id="upd"></span>.</footer>
+  <footer><b>Bètaversie:</b> deze gids is in ontwikkeling en kan fouten bevatten. Zie je er een, laat het weten. Dit is geen website van Defensie en geen medisch advies. Eisen kunnen veranderen en per vacature verschillen. Controleer altijd de officiële vacaturepagina op werkenbijdefensie.nl. Gegevens samengesteld op <span id="upd"></span>.</footer>
 </div>
 
 <script id="ui">
@@ -372,7 +373,6 @@ try{var raw=localStorage.getItem(KEY);if(raw){var p=JSON.parse(raw);
   S.generated=!!p.generated}}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify({cluster:S.cluster,checks:S.checks,notes:S.notes,done:S.done,over:S.over,plan:S.plan,generated:S.generated}))}catch(e){}}
 
-/* Inhoud */
 function lnk(path,t){return '<a href="'+BASE+path+'" target="_blank" rel="noopener">'+t+'</a>'}
 var SRC={
  keuring:{t:'Aanstellingskeuring',u:'/alles-over-je-sollicitatie-aanstellingskeuring'},
