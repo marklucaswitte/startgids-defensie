@@ -10,7 +10,6 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
-/* Ontwerp: donker en rustig, in de stijl van Apple. Zachte lagen, grote afgeronde kaarten, wazige bovenbalk, geen scherpe randen. Eén accentkleur: legergroen-helder. */
 :root{
   color-scheme:dark;
   --bg:#0a0c0a; --surface:#141814; --soft:#1e241e; --line:rgba(226,240,226,.10);
@@ -146,7 +145,6 @@ footer{border-top:1px solid var(--line);padding-top:16px;font-size:.8rem;line-he
 
 
 <script id="logic">
-/* Gegevens en schemalogica. Geen DOM nodig, zodat dit los te testen is. */
 var UPDATED='9 oktober 2026';
 var BASE='https://werkenbijdefensie.nl';
 
@@ -181,7 +179,6 @@ var FUNCTIES=[
  {id:'reservist-lm',naam:'Luchtmacht Reservist Bewaken en Beveiligen',deel:'Luchtmacht',groep:'Reservist',route:'Reservist',cluster:null,opl:'Minimaal MBO 2, of een gelijkwaardig buitenlands diploma met Nederlands en Engels als verplichte vakken, of NT2 niveau 3',leeftijd:'18 tot en met 55 jaar',duur:'AMO: 7 modules verspreid over 6 maanden, daarna BVO-KBB van ongeveer een halfjaar',zwem:NG,rijb:NG,url:'/vacatures/militaire-vacatures/luchtmacht-reservist-bewaken-beveiligen-e24949',extra:'Een voorlichting of webinar is verplicht vóór je solliciteert.'}
 ];
 
-/* Trainingsschema */
 function clamp(x,a,b){return Math.max(a,Math.min(b,x))}
 function mmss(s){s=Math.round(s);return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')}
 function fmtKg(x){return (Math.round(x*2)/2).toString().replace('.',',')}
@@ -423,7 +420,6 @@ var OND=[
 ];
 var REFLECT=['Waarom wil je bij Defensie werken, en waarom nu?','Vertel over een situatie waarin je onder druk moest presteren. Wat deed je en wat leerde je?','Hoe ga je om met een opdracht waar je het niet mee eens bent?','Wanneer heb je in een team gewerkt? Welke rol nam je?','Hoe houd je je aan afspraken en discipline als niemand meekijkt?','Wat doe je als je iets niet kunt of fout doet?'];
 
-/* Onderdelen van de weergave */
 function stChip(s){return '<span class="st '+s+'">'+STATUS[s]+'</span>'}
 function srcList(ids){return '<p class="sub">Bronnen</p><ul class="pts sources">'+ids.map(function(i){var s=SRC[i];return '<li>'+lnk(s.u,esc(s.t))+'</li>'}).join('')+'</ul>'}
 function clusterReq(cid){
@@ -614,7 +610,6 @@ function vBronnen(){
    '<div class="stamp"><b>Disclaimer.</b> Dit is geen website van Defensie en heeft geen band met Defensie. Defensie vermeldt zelf dat informatie op elk moment kan wijzigen. Gegevens samengesteld op '+UPDATED+'.</div>';
 }
 
-/* Render en events */
 function renderNav(){
   $('nav').innerHTML=VIEWS.map(function(v){return '<button type="button" data-a="go" data-v="'+v[0]+'"'+(S.view===v[0]?' aria-current="page"':'')+'>'+v[1]+'</button>'}).join('');
 }
