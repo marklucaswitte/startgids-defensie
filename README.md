@@ -4,4 +4,4 @@ Een gratis, onofficiële voorbereidingsgids voor iedereen die bij Defensie wil w
 
 Dit is geen officiële website van Defensie en geen medisch advies. Controleer de eisen altijd op de officiële vacaturepagina op werkenbijdefensie.nl.
 
-Gemaakt door Lucas Markwitte, samen met Claude (Anthropic). Alle gegevens staan als data in `index.html`. Er is geen server en er zijn geen accounts. Wat je invult blijft in je eigen browser.
+Gemaakt door Mark Lucas Alexander Witte, samen met Claude (Anthropic). Alle gegevens staan als data in `index.html`. Er is geen server en er zijn geen accounts. Wat je invult blijft in je eigen browser.
